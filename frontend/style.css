@@ -190,3 +190,119 @@ a {
 
 
 /* Начало блока РЕЛИЗЫ */
+.releases {
+	height: 100%;
+	width: 100%;
+	background-color: #03021E;
+}
+
+.releases__alboms {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0 0 0 ;
+	align-items: center;
+	font-size: 50px;
+}
+
+.releases__alboms_img {
+	width: 429px;
+}
+
+.releases__tops {
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	margin-top: 30px;
+	padding-bottom: 50px;
+}
+
+
+.releases__tops_top_tracks {
+	margin-top: 11px;
+	list-style: none;
+}
+
+.releases__tops_top_chart {
+	color: #FC3F4D;
+	font-family: "montserrat alternates", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.releases__tops_top_tracks li {
+	border-radius: 5px;
+	margin-bottom: 8px;
+	height: 50px;
+	width: 214px;
+	color: white;
+	background-color: #252433;
+}
+
+.releases__tops_top_tracks li:last-child {
+	margin-bottom: 0px;
+}
+
+.releases__tops_top_tracks li::before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	float: left;
+	background-image: url("images/music.png"), no-repeat;
+	margin: 0 10px 0 0;
+}
+
+
+/* Конец блока РЕЛИЗЫ */
+
+
+/* Начало блока МЕРЧ */
+
+.merch {
+	height: 100%;
+	width: 100%;
+	background-color: #03021E;
+}
+
+.merch__images {
+	display: grid;
+	grid-gap: 14px;
+	grid-template-areas: "a a b c" "a a d d" "e f d d";
+	margin-top: 50px;
+	padding-bottom: 100px;
+}
+
+.block {
+	max-width: auto;
+	min-height: 222px;
+	max-height: auto;
+	background-color: grey;
+	color: white;
+}
+
+.bl1 {
+	height: 460px;
+	grid-area: a;
+}
+
+.bl2 {
+	grid-area: b;
+}
+
+.bl3 {
+	grid-area: c;
+}
+
+.bl4 {
+	grid-area: d;
+}
+
+.bl5 {
+	grid-area: e;
+}
+
+.bl6 {
+	grid-area: f;
+}
+/* Конец блока МЕРЧ */
