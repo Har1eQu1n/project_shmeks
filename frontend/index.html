@@ -9,26 +9,25 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="main_background">
 <header>
 	<div class="header-line">
 		<div class="wrapper">
 			<ul class="header-line__nav">
-				<li><a href="#" class="link_style">О нас</a></li>
-				<li><a href="#" class="link_style">Билеты</a></li>
-				<li><a href="#" class="link_style">Релизы</a></li>
-				<li><a href="#" class="link_style">Мерч</a></li>
+				<li><a href="index.html"><img src="images/logo.png" class="header-line__nav_img"></a></li>
+				<li><a href="about_us.html" class="link_style">О нас</a></li>
+				<li><a href="tickets.html" class="link_style">Билеты</a></li>
+				<li><a href="releases.html" class="link_style">Релизы</a></li>
+				<li><a href="shop.html" class="link_style">Мерч</a></li>
 			</ul>
 		</div>
 	</div>
 </header>
-<div class="title-block">
+<div class="title_block_main">
 	<div class="wrapper">
-		<div class="title-block__logo">
-			<img src="images/logo.png" class="logo" alt="логотип">
-		</div>
-		<div class='title-block__image-people'>
-			<img src="">
+		<div class="title_block">
+			<div><img src="images/logo.png" class="logo" alt="логотип"></div>
+			<div><img src="images/main_img2-PhotoRoom.png-PhotoRoom.png" class="logo_people"></div>
 		</div>
 	</div>
 </div>
@@ -48,15 +47,15 @@
 	<div class="wrapper">
 		<div class="tickets__block">
 			<div class="tickets__block_map">
-				<img src="images/665x886_0xac120003_5888767601627903649.jpg" alt='карта'>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4259.55168376725!2d40.53797999247823!3d64.54246647884302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1685045913536!5m2!1sru!2sru" width="650" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<div class="tickets__block_info">
 				<ul class="tickets__block_info_list">
-					<li><a href="#">Архангельск, 02.06.2023</a></li>
-					<li><a href="#">Москва, 10.06.2023</a></li>
-					<li><a href="#">Екатеринбург, 16.06.2023</a></li>
-					<li><a href="#">Тюмень, 24.06.2023</a></li>
-					<li><a href="#">Норильск, 28.06.2023</a></li>
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Архангельск, 02.06.2023</a></li>
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Москва, 10.06.2023</a></li>
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Екатеринбург, 16.06.2023</a></li>
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Тюмень, 24.06.2023</a></li>
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Норильск, 28.06.2023</a></li>
 				</ul>
 			</div> 
 		</div> 
@@ -67,26 +66,32 @@
 	<div class="wrapper">
 		<div class="releases__alboms">
 			<div><</div>
-			<div><img src="images/cat.jpg" class="releases__alboms_img" alt="albom"></div>
-			<div><img src="images/cat.jpg" class="releases__alboms_img" alt="albom"></div>
+			<div><a href="release_page.html"><img src="images/LZltnFM-vnU.jpg" class="releases__alboms_img" alt="albom"></a></div>
+			<div><a href="release_page.html"><img src="images/7Mja-3HOWIs.jpg" class="releases__alboms_img" alt="albom"></a></div>
 			<div>></div>
 		</div>
 		<div class="releases__tops">
 			<div class="releases__tops_top">
 				<div class="releases__tops_top_chart">Топ месяца</div>
-				<ul class="releases__tops_top_tracks">
-					<li>Трек 1</li>
-					<li>Трек 2</li>
-					<li>Трек 3</li>
-				</ul>
+				<div class="releases__tops_top_tracks_grid">
+					<div class="releases__tops_top_tracks_grid_block tr1"><img src="images/music.png" class="track_img_1"></div>
+					<div class="releases__tops_top_tracks_grid_block tr2"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr3"><img src="images/music.png" class="track_img_2"></div>
+					<div class="releases__tops_top_tracks_grid_block tr4"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr5"><img src="images/music.png" class="track_img_3"></div>
+					<div class="releases__tops_top_tracks_grid_block tr6"><p>Название</p></div>
+				</div>
 			</div>
 			<div class="releases__tops_top">
 				<div class="releases__tops_top_chart">Топ года</div>
-				<ul class="releases__tops_top_tracks">
-					<li>Трек 1</li>
-					<li>Трек 2</li>
-					<li>Трек 3</li>
-				</ul>
+				<div class="releases__tops_top_tracks_grid">
+					<div class="releases__tops_top_tracks_grid_block tr1"><img src="images/music.png" class="track_img_1"></div>
+					<div class="releases__tops_top_tracks_grid_block tr2"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr3"><img src="images/music.png" class="track_img_2"></div>
+					<div class="releases__tops_top_tracks_grid_block tr4"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr5"><img src="images/music.png" class="track_img_3"></div>
+					<div class="releases__tops_top_tracks_grid_block tr6"><p>Название</p></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -95,14 +100,32 @@
 	<div class="header-line"><div class="header-line__title">Мерч</div></div>
 	<div class="wrapper">
 		<div class="merch__images">
-			<div class="block bl1">1</div>
-			<div class="block bl2">2</div>
-			<div class="block bl3">3</div>
-			<div class="block bl4">4</div>
-			<div class="block bl5">5</div>
-			<div class="block bl6">6</div>
+			<div class="merch__images_block bl1"><img src="images/yHqNbql_Zt0.jpg"></div>
+			<div class="merch__images_block bl2"><img src="images/CLUQ20vcv_k.jpg"></div>
+			<div class="merch__images_block bl3"><a href="shop.html"><div class="merch__images_block_cors"><img src="images/cors.png"><p>Каталог<p></div></a></div>
+			<div class="merch__images_block bl4"><img src="images/ITkQUlYzSBU.jpg"></div>
+			<div class="merch__images_block bl5"><img src="images/XuOyeDUVUfY.jpg"></div>
+			<div class="merch__images_block bl6"><img src="images/RQ8Aq2iwmBo.jpg"></div>
 		</div>
 	</div>
 </div>
+<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__flex">
+			<img src="images/logo.png" class="footer__logo_img" alt="logo">
+			<div>
+				<ul class="footer__menu">
+					<li><a href="#" class="link_style">Соглашение</a></li>
+					<li><a href="#" class="link_style">Концерты</a></li>
+					<li><a href="#" class="link_style">Релизы</a></li>
+					<li><a href="#" class="link_style">Мерч</a></li>
+					<li><a href="#" class="link_style">О нас</a></li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<p>&#169; shmeks 2023</p>
+	</div>
+</footer>
 </body>
 </html>
