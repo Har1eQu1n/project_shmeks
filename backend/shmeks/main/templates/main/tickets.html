@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block main %}
+<div class="tickets_s">
+	<div class="wrapper">
+		<div class="tickets__year">
+			<p>2023</p>
+			<hr>
+		</div>
+		{% for ticket in tickets %}
+		<div class="tickets__blocks">
+			<div class="tickets__blocks_block">
+				<div class="tickets__blocks_block_date"><span>{{ ticket.date.day }}</span><p>{{ ticket.date.month}} {{ ticket.date.year}}</p></div>
+				<div class="tickets__blocks_block_city">{{ ticket.city }} <p>{{ ticket.club }}</p></div>
+				<div class="tickets__blocks_block_street">{{ ticket.street }}</div>
+				<div class="tickets__blocks_block_buy"><a href="https://arh.kassir.ru/bilety-na-koncert" target="_blank">Купить билет</a></div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

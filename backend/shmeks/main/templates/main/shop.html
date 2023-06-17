@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block main %}
+<div class="shop">
+	<div class="wrapper">
+		<div class="telega_img_block"><img src="{% static 'main/images/telega.png' %}" class="telega_img"></div>
+		{% for i in shop %}
+		<div class="shop__cart">
+			<a href="{% url 'shop_detail' i.pk %}"><img src="{{ i.image.url }}" class="shop__cart_img"></a>
+			<div class="shop__cart_text">
+				<div class="shop__cart_title">{{ i.name }}</div>
+				<div class="shop__cart_description">{{ i.description }}</div>
+				<div class="shop__cart_button"><a href="#">Добавить в корзину</a></div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock %}

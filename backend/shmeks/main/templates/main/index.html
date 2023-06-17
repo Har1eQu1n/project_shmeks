@@ -1,0 +1,89 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block main %}
+<div class="title_block_main">
+	<div class="wrapper">
+		<div class="title_block">
+			<div><img src="{% static 'main/images/logo.png' %}" class="logo" alt="логотип"></div>
+			<div><img src="{% static 'main/images/main_img2-PhotoRoom.png-PhotoRoom.png' %}" class="logo_people"></div>
+		</div>
+	</div>
+</div>
+<div class="about-us">
+	<div class="header-line"><div class="header-line__title">О нас</div></div>
+	<div class="wrapper">
+		<div class="about-us__text">
+			<p>Архангельская панк-рок-группа, основанная в 2003 году под названием Шрекс, первоначально исполняли музыку в стиле рэп, но вскоре они разочаровались в данном стиле музыки и решили перейти на панк-рок. Нынешний состав группы состоит из ритм-гитариста Андреева Максима Максимовича и вокалиста Андрея Боровского, гитариста Алексея Светоборца, басиста Олеа "Psay" Алексеевича, и барабанщика Чопра Марактуса, все из которых являются основателями.</p>
+			<p>Существуя с 2007 года под названием Гражданские бобры. Первоначально они выступали на улице Чумбарово-Лучинского, где и нашли своих первых фанатов. Вскоре они начали выступать на сцене клуба "Колесо" и стали частыми гостями этой сцены.</p>
+			<p>В группе происходили тёрки из-за того, что гитарист Алексей Светоборец хотел увести невесту у ритм-гитариста Андреева Максима Максимовича группа чуть не распалась, но благодая солисту данный конфликт удалось умять. Но в 2010 году из-за учёбы вокалиста во Франции, группа вынуждена была приостановить свою деятельность на 8 лет. За это время многие позабыли о существовании данной группы и осталось лишь несколько верных фанатов.</p>
+			<p>Но спустя все преграды, группа возвращается, пересмотрев свой вгляды на музыку и поменяв направление, в ближайшее время группа будет радовать вас новыми хитами и выступлениями.</p>
+		</div>
+	</div>
+</div>
+<div class="tickets">
+	<div class="header-line"><div class="header-line__title">Билеты</div></div>
+	<div class="wrapper">
+		<div class="tickets__block">
+			<div class="tickets__block_map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4259.55168376725!2d40.53797999247823!3d64.54246647884302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1685045913536!5m2!1sru!2sru" width="650" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="tickets__block_info">
+				<ul class="tickets__block_info_list">
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Архангельск, 29.06.2023</a></li>
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Москва, 21.07.2023</a></li>
+					<li><a href="https://arh.kassir.ru/bilety-na-koncert">Санкт-Петербург, 05.08.2023</a></li>
+				</ul>
+			</div> 
+		</div> 
+	</div>
+</div>
+<div class="releases">
+	<div class="header-line"><div class="header-line__title">Релизы</div></div>
+	<div class="wrapper">
+		<div class="releases__alboms">
+			<div><</div>
+			<div><a href="release_page.html"><img src="{% static 'main/images/LZltnFM-vnU.jpg' %}" class='releases__alboms_img' alt='albom'></a></div>
+			<div><a href="release_page.html"><img src="{% static 'main/images/7Mja-3HOWIs.jpg' %}" class='releases__alboms_img' alt='albom'></a></div>
+			<div>></div>
+		</div>
+		<div class="releases__tops">
+			<div class="releases__tops_top">
+				<div class="releases__tops_top_chart">Топ месяца</div>
+				<div class="releases__tops_top_tracks_grid">
+					<div class="releases__tops_top_tracks_grid_block tr1"><img src="{% static 'main/images/music.png' %}" class="track_img_1"></div>
+					<div class="releases__tops_top_tracks_grid_block tr2"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr3"><img src="{% static 'main/images/music.png' %}" class="track_img_2"></div>
+					<div class="releases__tops_top_tracks_grid_block tr4"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr5"><img src="{% static 'main/images/music.png' %}" class="track_img_3"></div>
+					<div class="releases__tops_top_tracks_grid_block tr6"><p>Название</p></div>
+				</div>
+			</div>
+			<div class="releases__tops_top">
+				<div class="releases__tops_top_chart">Топ года</div>
+				<div class="releases__tops_top_tracks_grid">
+					<div class="releases__tops_top_tracks_grid_block tr1"><img src="{% static 'main/images/music.png' %}" class="track_img_1"></div>
+					<div class="releases__tops_top_tracks_grid_block tr2"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr3"><img src="{% static 'main/images/music.png' %}" class="track_img_2"></div>
+					<div class="releases__tops_top_tracks_grid_block tr4"><p>Название</p></div>
+					<div class="releases__tops_top_tracks_grid_block tr5"><img src="{% static 'main/images/music.png' %}" class="track_img_3"></div>
+					<div class="releases__tops_top_tracks_grid_block tr6"><p>Название</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="merch">
+	<div class="header-line"><div class="header-line__title">Мерч</div></div>
+	<div class="wrapper">
+		<div class="merch__images">
+			<div class="merch__images_block bl1"><img src="{% static 'main/images/yHqNbql_Zt0.jpg' %}"></div>
+			<div class="merch__images_block bl2"><img src="{% static 'main/images/CLUQ20vcv_k.jpg' %}"></div>
+			<div class="merch__images_block bl3"><a href="{% url 'shop'%}"><div class="merch__images_block_cors"><img src="{% static 'main/images/cors.png' %}"><p>Каталог<p></div></a></div>
+			<div class="merch__images_block bl4"><img src="{% static 'main/images/ITkQUlYzSBU.jpg' %}"></div>
+			<div class="merch__images_block bl5"><img src="{% static 'main/images/XuOyeDUVUfY.jpg' %}"></div>
+			<div class="merch__images_block bl6"><img src="{% static 'main/images/RQ8Aq2iwmBo.jpg' %}"></div>
+		</div>
+	</div>
+</div>
+{% endblock %}

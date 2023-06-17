@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block main %}
+<div class="releases">
+	<div class="wrapper">
+		<div class="releases__cards">
+			{% for release in releases %}
+			<div class="releases__card">
+				<a href="{% url 'releases_detail' release.pk %}">
+					<img src='{{ release.image.url }}' class="releases__card_img">
+				</a>
+				<div class="releases__card_named">{{ release.name }}</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}
