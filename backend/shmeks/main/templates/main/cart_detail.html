@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block main %}
+{% for item in cart %}
+    {% with merch=item.merch %}
+        <img src="{% if merch.image %} {{ merch.image.url }}{% endif %}" width="200px">
+        <p>{{ product.name }}</p>
+        <a href='{% url "cart_remove" merch.id %}'>Remove</a>
+        <p class="num" style="color: white">{{ item.price }}</p>
+    {% endwith %}
+{% endfor %}
+<div class="total">
+    <p style="color: white">Итого:</p>
+    <p class="num" style="color: white">{{ cart.get_total_price }}</p>
+</div>
+{% endblock %}

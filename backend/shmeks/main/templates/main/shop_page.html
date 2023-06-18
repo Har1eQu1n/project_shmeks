@@ -1,6 +1,52 @@
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block main %}
-
-
+<div class="shop_page">
+	<div class="wrapper">
+		<div class="telega_img_block"><a href="{% url 'cart_detail' %}"><img src="{% static 'main/images/telega.png' %}" class="telega_img"></a></div>
+		<div class="shop_page__info">
+			<img src="{{ merch.image.url }}" class="shop_page__info_img">
+			<div class="shop_page__info_text">
+				<div class="shop__cart_title">{{ merch.name }}</div>
+				<div class="shop_page__info_price">{{ merch.price }}</div>
+				<div class="shop_page__info_compound">
+					<p>Состав:</p>
+					<ul>
+						<li>{{ merch.composition }}</li>
+					</ul>
+				</div>
+				<div class="shop_page__info_size">
+					Размер
+					<div class="shop_page__info_list">{{ merch.size }}</div>
+					<div class="dropdown-content">
+						<p>S</p>
+						<p>M</p>
+						<p>L</p>
+						<p>XL</p>
+					</div>
+				</div>
+				<div class="shop_page__info_color">
+					Цвет
+					<div class="shop_page__info_list">{{ merch.color }}</div>
+					<div class="dropdown-content">
+						<p>Белый</p>
+						<p>Черный</p>
+						<p>Фиолетовый</p>
+						<p>Серый</p>
+					</div>
+				</div>
+				<div class="shop__cart_button_flex">
+					<div class="shop__cart_button button1"><a href="{% url 'cart_add' merch.id %}">Добавить в корзину</a></div>
+					<div class="shop__cart_button_buy"><a href="#">Купить</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="shop_page__about_product">
+			<p>О товаре</p>
+			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+		</div>
+	</div>
+</div>
 {% endblock %}

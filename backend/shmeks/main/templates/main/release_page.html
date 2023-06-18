@@ -1,6 +1,33 @@
 {% extends 'main/base.html' %}
 
 {% block main %}
-
-
+<div class="release_page">
+	<div class="wrapper">
+		<div class="release_page__info">
+			<img src="{{ releases.image.url }}" class="release_page__img">
+			<div class="release_page__text">
+				<div class="shop__cart_title">{{ releases.name }}</div>
+				<ul class="release_page__links">
+					{% if releases.apple_music %}
+						<li><a href="{{ releases.apple_music }}">Apple Music</a></li>
+					{% endif %}
+					{% if releases.spotify %}
+						<li><a href="{{ releases.spotify }}">Spotify</a></li>
+					{% endif %}
+					{% if releases.vkontakte %}
+						<li><a href="{{ releases.vkontakte }}">Vkontakte</a></li>
+					{% endif %}
+					{% if releases.youtube %}
+						<li><a href="{{ releases.youtube }}">Youtube</a></li>
+					{% endif %}
+					{% if releases.youtube_music %}
+						<li><a href="{{ releases.youtube_music }}">Youtube Music</a></li>
+					{% endif %}
+				</ul>
+				<hr class="release_page__hr">
+				<div class="shop__cart_description">{{ releases.release_description }}</div>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+{% block main %}
+<div class="form">
+    <div class="wrapper">
+        <div class="form_card">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Зарегестрироваться">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

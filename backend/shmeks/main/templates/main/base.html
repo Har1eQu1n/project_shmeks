@@ -20,6 +20,11 @@
 				<li><a href="{% url 'tickets' %}" class="link_style">Билеты</a></li>
 				<li><a href="{% url 'releases' %}" class="link_style">Релизы</a></li>
 				<li><a href="{% url 'shop' %}" class="link_style">Мерч</a></li>
+				{% if user.is_authenticated %}
+					<li><a href="{% url 'logout' %}">Выйти</a></li>
+				{% else %}
+					<li><a href="{% url 'login' %}" class="link_style">Войти</a></li>
+				{% endif %}
 			</ul>
 		</div>
 	</div>

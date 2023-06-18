@@ -10,7 +10,7 @@
 		{% for ticket in tickets %}
 		<div class="tickets__blocks">
 			<div class="tickets__blocks_block">
-				<div class="tickets__blocks_block_date"><span>{{ ticket.date.day }}</span><p>{{ ticket.date.month}} {{ ticket.date.year}}</p></div>
+				<div class="tickets__blocks_block_date"><span>{{ ticket.date|date:"j" }}</span><p>{{ ticket.date|date:"E"}} {{ ticket.date|date:"Y"}}</p></div>
 				<div class="tickets__blocks_block_city">{{ ticket.city }} <p>{{ ticket.club }}</p></div>
 				<div class="tickets__blocks_block_street">{{ ticket.street }}</div>
 				<div class="tickets__blocks_block_buy"><a href="https://arh.kassir.ru/bilety-na-koncert" target="_blank">Купить билет</a></div>
