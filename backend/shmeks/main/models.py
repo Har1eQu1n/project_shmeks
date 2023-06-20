@@ -36,7 +36,7 @@ class Releases(models.Model):
 
 class Merch(models.Model):
     name = models.CharField(max_length=256, verbose_name='Название товара')
-    image = models.ImageField(verbose_name='Изображение')
+    image = models.ImageField(upload_to='merch', verbose_name='Изображение')
     description = models.TextField(verbose_name='Описание', blank=True, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='Цена')
     composition = models.TextField(verbose_name='Состав')
