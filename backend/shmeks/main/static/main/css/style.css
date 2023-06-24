@@ -860,14 +860,41 @@ a {
 /* ------------------------------- */
 /* Начало страниц Регистрация и Вход */
 /* ------------------------------- */
+.form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .form_card {
     margin: 0 auto;
     background-color: white;
     padding: 50px;
     border: 1px solid #FC3F4D;
     border-radius: 15px;
-    width: 300px;
+    width: 400px;
     height: 500px;
+}
+
+.form_card form p {
+    margin-top: 10px;
+}
+
+.form_card h2 {
+    text-align:center;
+}
+
+.entry_button {
+    padding: 5px 20px;
+    background: white;
+    border: 1px solid black
+    transition: background .3s, color .3s;
+    margin-top: 15px;
+}
+
+.entry_button:hover {
+    background: black;
+    color: white;
 }
 
 

@@ -4,12 +4,14 @@
 <div class="form">
     <div class="wrapper">
         <div class="form_card">
+            <h2>Регистрация</h2>
+            <br>
             <form method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <input type="submit" value="Зарегестрироваться">
+                <br>{{ form.as_p }}
+                <input type="submit" value="Зарегестрироваться" class="entry_button">
             </form>
+            </div>
         </div>
-    </div>
 </div>
 {% endblock %}

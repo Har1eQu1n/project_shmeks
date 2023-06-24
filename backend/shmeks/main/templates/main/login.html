@@ -1,10 +1,19 @@
 {% extends 'main/base.html' %}
 
 {% block main %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Войти">
-    <p>У вас еще не создан аккаунт? <a href="{% url 'entry' %}">Зарегестрироваться</a></p>
-</form>
+<div class="form">
+    <div class="wrapper">
+        <div class="form_card">
+            <h2>Вход</h2>
+            <br>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Войти" class="entry_button">
+                <p>У вас еще не создан аккаунт? <a href="{% url 'entry' %}">Зарегестрироваться</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
